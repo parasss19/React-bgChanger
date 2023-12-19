@@ -10,11 +10,14 @@ function App() {
    
          {/* container of colors */}
            <div className="fixed flex justify-center bottom-12 inset-x-0 px-2">
+
           {/* color bar */}
             <div className="flex flex-wrap gap-3 shadow-xl rounded-2xl px-3 py-2 bg-orange-200">
+
               {/*buttons  */}
-              <button onClick ={()=>{setColor(`red`)}} className="outline-none text-white rounded-xl shadow-xl px-3 py-2"
-               style={{backgroundColor: "red"}}>
+              <button onClick ={ ()=>{setColor(`red`)}} className="outline-none text-white rounded-xl shadow-xl px-3 py-2"
+              // Here this style is used to set the color of the button to red
+               style={{backgroundColor: "red"}}>    
                 Red
               </button>
               <button onClick ={()=>{setColor(`green`)}} className="outline-none text-white rounded-xl shadow-xl px-3 py-2"
@@ -41,6 +44,7 @@ function App() {
                style={{backgroundColor: "purple"}}>
                 Purple
               </button>
+
           </div>
 
       </div>
